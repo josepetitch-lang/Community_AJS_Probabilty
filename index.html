@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interacción con el Ajedrez - Comunidad Antonio José de Sucre</title>
+    <link rel="stylesheet" href="design/style.css">
+    <link rel="stylesheet" href="design/calculate.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <span>UNEFA - Núcleo Falcón (Punto Fijo)</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#estadisticas">Cálculos Estadísticos</a></li>
+                <li><a href="#impacto">Impacto</a></li>
+                <li><a href="#galeria">Anexos</a></li>
+                <li><a href="#comentarios">Feedback</a></li>
+            </ul>
+        </nav>
+        <div class="language-selector">
+            <select id="lang-select">
+                <option value="es" selected>Español</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section id="inicio">
+            <div class="hero-content">
+                <h1>Interacción con el Ajedrez en la Comunidad Antonio José de Sucre – Sector I</h1>
+                <p>Asignatura: Probabilidad y Estadística | Ingeniería de Sistemas 3er Semestre</p>
+            </div>
+
+            <div id="login-container" class="auth-box">
+                <h2>Acceso al Sistema (Ajedrez.db)</h2>
+                <form id="login-form" action="in/regis.php" method="POST">
+                    <div class="form-group">
+                        <label for="username">Usuario:</label>
+                        <input type="text" id="username" name="username" required placeholder="Usuario">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="password" name="password" required placeholder="••••••••">
+                    </div>
+                    <button type="submit" id="btn-login">Iniciar Sesión</button>
+                </form>
+                <p id="login-message" class="message-hidden"></p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="estadisticas">
+            <h2>Procesamiento Estadístico Automatizado</h2>
+            <p>Monitoreo en tiempo real de los datos agrupados de la encuesta aplicada a 50 habitantes:</p>
+            
+            <div class="calc-panel">
+                <div class="calc-controls">
+                    <button id="start-calc-btn" class="btn-accent">Simular Procesamiento de Frecuencias</button>
+                    <span id="calc-status-text">Sistema en espera...</span>
+                </div>
+
+                <div class="console-box">
+                    <div class="console-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="console-title">Fórmulas Logarítmicas & Frecuencias - UNEFA</span>
+                    </div>
+                    <div class="console-body" id="console-output">
+                        <p class="console-line text-muted">// Presiona el botón superior para calcular la Media de asistencia...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Población (Sector I)</h3>
+                    <p class="stat-number">50 Encuestados</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Media Obtenida</h3>
+                    <p class="stat-number" id="final-media">0.0 días</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Aprobación del Club</h3>
+                    <p class="stat-number">94% (SI)</p>
+                </div>
+            </div>
+
+            <div class="db-table-container">
+                <h3>Tabla de Frecuencia Integrada</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Intervalo</th>
+                            <th>Xi</th>
+                            <th>Fi</th>
+                            <th>Xi * Fi</th>
+                            <th>Facum</th>
+                            <th>ni</th>
+                            <th>hi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="animated-row"><td>[0, 5</td><td>2.5</td><td>45</td><td>112.5</td><td>45</td><td>0.90</td><td>0.90</td></tr>
+                        <tr class="animated-row"><td>[5, 10</td><td>7.5</td><td>0</td><td>0</td><td>45</td><td>0</td><td>0.90</td></tr>
+                        <tr class="animated-row"><td>[10, 15</td><td>12.5</td><td>1</td><td>12.5</td><td>46</td><td>0.02</td><td>0.92</td></tr>
+                        <tr class="animated-row"><td>[15, 20</td><td>17.5</td><td>0</td><td>0</td><td>46</td><td>0</td><td>0.92</td></tr>
+                        <tr class="animated-row"><td>[20, 25</td><td>22.5</td><td>0</td><td>0</td><td>46</td><td>0</td><td>0.92</td></tr>
+                        <tr class="animated-row"><td>[25, 30</td><td>27.5</td><td>1</td><td>27.5</td><td>47</td><td>0.02</td><td>0.94</td></tr>
+                        <tr class="animated-row"><td>[30, 35]</td><td>32.5</td><td>3</td><td>97.5</td><td>50</td><td>0.06</td><td>1</td></tr>
+                        <tr class="table-summary"><td><strong>∑</strong></td><td>-</td><td><strong>50</strong></td><td><strong>250</strong></td><td>-</td><td><strong>1</strong></td><td>-</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="impacto">
+            <h2>Justificación del Proyecto</h2>
+            <blockquote>
+                "Ante la falta de una casa comunal en la Comunidad Antonio José de Sucre – Sector I, el ajedrez se consolida como la opción más viable y económica para sus habitantes. Su facilidad de traslado y al ser un juego que no requiere de un espacio físico, toma relevancia..."
+            </blockquote>
+        </section>
+
+        <hr>
+
+        <section id="galeria" class="chart-container">
+            <h2>Evidencias e Instrumentos de Muestreo</h2>
+            <div class="image-gallery">
+                <div class="gallery-item">
+                    <img src="images/poblacion_y_muestra.png" alt="Población y Muestra" id="img-muestra">
+                    <p class="img-caption">Esquema de Población y Muestra</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/dados.png" alt="Análisis de Datos" id="img-dados">
+                    <p class="img-caption">Recopilación Física de Datos</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/icongrafic.png" alt="Gráficos" id="img-grafico">
+                    <p class="img-caption">Gráfico Frecuencial</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/unefa.png" alt="Logo UNEFA" id="img-unefa">
+                    <p class="img-caption">Eje de Investigación UNEFA Falcón</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="comentarios">
+            <h2>Zona de Interacción de la Comunidad</h2>
+            <form id="comment-form" action="in/worked.php" method="POST">
+                <div class="form-group">
+                    <label for="comment-author">Habitante / Estudiante:</label>
+                    <input type="text" id="comment-author" name="usuario" required placeholder="Tu nombre">
+                </div>
+                <div class="form-group">
+                    <label for="comment-text">Comentario:</label>
+                    <textarea id="comment-text" name="comentario" required rows="4" placeholder="Opina sobre la viabilidad del Club de Ajedrez..."></textarea>
+                </div>
+                <button type="submit" id="btn-comment">Publicar Observación</button>
+            </form>
+            <div id="comments-display-area">
+                <ul id="comments-list">
+                    </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Autores: G. García, J. Guanipa, J. Guerra, J. Petit &copy; 2026 UNEFA</p>
+    </footer>
+
+    <script>
+        document.getElementById('start-calc-btn').addEventListener('click', function() {
+            const output = document.getElementById('console-output');
+            const statusText = document.getElementById('calc-status-text');
+            const finalMedia = document.getElementById('final-media');
+            
+            output.innerHTML = '';
+            statusText.innerText = 'Procesando matriz...';
+            statusText.style.color = '#ca8a04';
+
+            
+            const pasos = [
+                { text: '> Conectando con database/Ajedrez.db ... Éxito.', delay: 400, color: '#10b981' },
+                { text: '> Cargando respuestas no agrupadas de los 50 ciudadanos...', delay: 900, color: '#e2e8f0' },
+                { text: '> Matriz capturada: [0,0,0,0,0,0,0,2,0,0,30,30,0,0,30,0,0,0,0,0...]', delay: 1400, color: '#94a3b8' },
+                { text: '> Calculando Rango (R): Xmax - Xmin = 30 - 0 = 30', delay: 2000, color: '#e2e8f0' },
+                { text: '> Aplicando Regla de Sturges: K = 1 + 3.322 * log10(50) = 6.64 ≈ 7 Intervalos', delay: 2700, color: '#ca8a04' },
+                { text: '> Determinando Amplitud de Clase (A): R / K = 30 / 7 = 4.28 ≈ 5', delay: 3400, color: '#ca8a04' },
+                { text: '> Evaluando sumatoria para datos agrupados: ∑(Xi * Fi) = 250', delay: 4100, color: '#e2e8f0' },
+                { text: '> Aplicando fórmula de la Media: X̄ = ∑(Xi * Fi) / N = 250 / 50', delay: 4800, color: '#10b981' },
+                { text: '>> ¡Cálculo completado exitosamente!', delay: 5400, color: '#10b981' }
+            ];
+
+            pasos.forEach((paso) => {
+                setTimeout(() => {
+                    const p = document.createElement('p');
+                    p.className = 'console-line';
+                    p.style.color = paso.color;
+                    p.innerText = paso.text;
+                    output.appendChild(p);
+                    output.scrollTop = output.scrollHeight;
+                }, paso.delay);
+            });
+
+            
+            setTimeout(() => {
+                statusText.innerText = 'Finalizado';
+                statusText.style.color = '#10b981';
+                
+                let currentMedia = 0;
+                const interval = setInterval(() => {
+                    currentMedia += 0.2;
+                    if (currentMedia >= 2.8) {
+                        finalMedia.innerText = '2.8 ≈ 3 días';
+                        clearInterval(interval);
+                    } else {
+                        finalMedia.innerText = currentMedia.toFixed(1) + ' días';
+                    }
+                }, 40);
+            }, 5400);
+        });
+    </script>
+</body>
+</html

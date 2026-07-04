@@ -9,18 +9,18 @@
 -- Actividades: Diapositivas, Archivo Word, Página Web, Database
 
 *Que responsabilidad posee cada Integrante*
--- Joseph2607-ALT:
--- CazadorNPC:
--- Gabrielzzz64:
--- j4zyln2:
+-- Joseph2607-ALT: Lider y orden del grupo
+-- CazadorNPC: Diapositiva y orden
+-- Gabrielzzz64: Calculos Datos y Teoría del Muestreo
+-- j4zyln2: Creador de la página web, calculos matématicos, diseño de la diapositiva
 
 *¿Qué hace esta pagina web?*
 
---
+-- Muestra lo obtenido en nuestra información
 
 *¿Cómo funciona?*
 
--- 
+-- Tienes la tabla de calculos, resultados, fotos, e incluso espacios para que puedas comentar ahí mismo :3
 
 *¿Recibirá actualizaciones futuras?*:
 

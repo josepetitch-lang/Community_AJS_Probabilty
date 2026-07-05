@@ -1,0 +1,7 @@
+{
+    "name": "comunidad-ajedrez-unefa",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "node -e 'const { exec } = require(\"child_process\"); console.log(\"Iniciando PHP...\"); exec(\"php -S 0.0.0.0:\" + process.env.PORT);'"
+    }
+}

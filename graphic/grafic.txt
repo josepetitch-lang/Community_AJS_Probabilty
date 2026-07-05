@@ -1,0 +1,48 @@
+REPORTE TEXTUAL DE METADATOS GRÁFICOS - PROYECTO ESTADÍSTICA
+
+
+Este archivo contiene el mapeo numérico y la configuración técnica
+de las variables utilizadas por el motor gráfico de Python 
+(generar_graficas.py) para el proyecto de campo del Sector I.
+
+[PREGUNTA 1] - ACEPTACIÓN DEL CLUB DE AJEDREZ (Cualitativa Dicotómica)
+
+* Pregunta base: ¿Le gustaría que se implementara un espacio o club de ajedrez?
+* Tamaño de la Muestra (n): 50 individuos.
+* Distribución de Frecuencia Absoluta (f):
+  - Sí: 47 habitantes.
+  - No: 3 habitantes.
+* Distribución de Frecuencia Relativa (%):
+  - Opción "Sí" (Dorado Base / #ca8a04): 94.0%
+  - Opción "No"  (Gris Muted    / #475569): 6.0%
+
+
+[PREGUNTA 2] - FRECUENCIA DE INTERACCIÓN O ACTIVIDAD AJEDRECISTICA (vaya nombre de mierda xd)
+-
+* Pregunta base: Frecuencia de juego o interacción con la disciplina.
+* Distribución Porcentual Cargada en Gráficos:
+  - Nunca          (42%) -> Frecuencia Absoluta: 21 personas.
+  - Casi Nunca     (26%) -> Frecuencia Absoluta: 13 personas.
+  - Ocasionalmente (28%) -> Frecuencia Absoluta: 14 personas.
+  - Todos los días (2%)  -> Frecuencia Absoluta: 1 persona.
+* Conclusión del Vector: Refleja la necesidad de arrancar el club con 
+  un nivel pedagógico desde cero.
+
+
+[PREGUNTA 3] - Nivel de Dificultad
+-
+* Pregunta base: Percepción de dificultad para aprender las reglas.
+* Distribución Porcentual Cargada en Gráficos:
+  - Intermedio: 52% (26 personas)
+  - Difícil:    30% (15 personas)
+  - Muy Difícil:14% (7 personas)
+  - Fácil:      2%  (1 persona)
+
+## ESPECIFICACIONES DE LA PALETA GRÁFICA (CSS Variables Match)
+
+* Background General Matplotlib: 'dark_background'
+* Accent Color (Dorado Club):     #ca8a04
+* Muted Color (Gris de Control):  #475569
+* Primary UI (Azul de Frecuencia):#3b82f6
+* Emerald UI (Verde Dificultad):  #10b981
+* Formato de exportación:         PNG a 150 DPI (Fondo Transparente)

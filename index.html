@@ -6,6 +6,9 @@
     <title>Interacción con el Ajedrez - Comunidad Antonio José de Sucre</title>
     <link rel="stylesheet" href="design/style.css">
     <link rel="stylesheet" href="design/calculate.css">
+    <link rel="stylesheet" href="design/graphic.css">
+    <link rel="stylesheet" href="design/explanation.css">
+    <link rel="stylesheet" href="design/animation_photo.css">
 </head>
 <body>
 
@@ -179,9 +182,7 @@
 
     </main>
 
-    <footer>
-        <p>Autores: G. García, J. Guanipa, J. Guerra, J. Petit &copy; 2026 UNEFA</p>
-    </footer>
+
 
     <script>
         document.getElementById('start-calc-btn').addEventListener('click', function() {
@@ -235,5 +236,193 @@
             }, 5400);
         });
     </script>
+
+    <section id="graficos-estadisticos">
+    <h2>Resultados Gráficos del Estudio</h2>
+    <p>Visualización analítica de las variables críticas medidas en la muestra de 50 habitantes (Generadas mediante Matplotlib).</p>
+
+    <div class="charts-python-wrapper">
+        <div class="chart-python-card">
+            <img src="images/aceptacion_club.png" alt="Aceptación del Club" class="img-chart-fluid">
+            <p class="chart-desc">Un contundente 94% de aprobación respalda el proyecto como alternativa recreativa viable.</p>
+        </div>
+
+        <div class="chart-python-card">
+            <img src="images/frecuencia_ajedrez.png" alt="Frecuencia de Interacción" class="img-chart-fluid">
+            <p class="chart-desc">Refleja la necesidad latente de que el club actúe como una escuela inicial desde cero.</p>
+        </div>
+
+        <div class="chart-python-card">
+            <img src="images/dificultad_aprendizaje.png" alt="Percepción de Dificultad" class="img-chart-fluid">
+            <p class="chart-desc">Establece los rangos de complejidad percibidos para estructurar los niveles de enseñanza.</p>
+        </div>
+    </div>
+</section>
+
+<hr>
+
+<section id="agradecimientos" class="thanks-section">
+    <div class="thanks-container">
+        <div class="thanks-badge">Reconocimiento Especial</div>
+        <h2>Agradecimientos</h2>
+        <p class="thanks-text">
+            Extendemos nuestro más sincero agradecimiento a la profesora <strong>Marianyella Rodríguez</strong> por su excelente guía, dedicación y rigurosidad académica a lo largo del dictado de la asignatura <em>Probabilidad y Estadística</em>. 
+        </p>
+        <p class="thanks-text">
+            Su orientación metodológica ha sido fundamental no solo para el correcto análisis estadístico y de frecuencias de esta investigación de campo en la Comunidad Antonio José de Sucre, sino también para fortalecer nuestras competencias profesionales en este tercer semestre de Ingeniería de Sistemas.
+        </p>
+        <div class="signature">
+            <p>— Equipo de Desarrollo de Sistemas UNEFA</p>
+        </div>
+    </div>
+</section>
+
+    <section id="descargas">
+        <div class="download card">
+            <div class="download-icon">
+                <h2></h2>
+                <p>Descarga el documento oficial de Nuestra Investigación</p>
+                <a href="document\Proyecto Probabilidad.docx" donwload="Proyecto_Probabilidad_UNEFA.docx" class="btn-download">
+                    Descargar Proyecto (.docx)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="conclusion-final" class="summary-section">
+    <div class="summary-container">
+        <h2>Conclusión y Análisis Final del Proyecto</h2>
+        <p class="summary-intro">
+            A través del procesamiento estadístico de los datos recolectados en el Sector I de la Comunidad Antonio José de Sucre, se consolidan las siguientes interpretaciones finales:
+        </p>
+
+        <div class="summary-grid">
+            <div class="summary-card">
+                <div class="card-icon"></div>
+                <h3>Baja Actividad Recreativa</h3>
+                <p>El cálculo de datos no agrupados determinó una media de apenas <strong>2.8 días al mes</strong> de participación recreativa por habitante. Con una mediana y moda equivalentes a <strong>0</strong>, se evidencia una alarmante rutina comunitaria carente de opciones constructivas de ocio.</p>
+            </div>
+
+            <div class="summary-card highlight-card">
+                <div class="card-icon"></div>
+                <h3>Deseo de Transformación</h3>
+                <p>A pesar del panorama actual, existe un respaldo masivo e histórico dentro de la muestra: el <strong>94% de los encuestados</strong> aprueba con un rotundo "SÍ" la creación de un espacio o club enfocado en la disciplina del ajedrez.</p>
+            </div>
+
+            <div class="summary-card">
+                <div class="card-icon"></div>
+                <h3>Estrategia Inicial</h3>
+                <p>Dado que la mayoría de los habitantes se ubica en los rangos de <em>"Nunca"</em> o <em>"Casi Nunca"</em> en interacción con el juego, el club no solo será un área de entretenimiento, sino una academia pública para enseñar las reglas básicas (movimientos de peón, caballo, alfil, rey) desde cero.</p>
+            </div>
+        </div>
+
+        <div class="viability-box">
+            <h4>Declaración de Viabilidad Institucional</h4>
+            <p>
+                Ante las limitaciones presupuestarias y la ausencia de una infraestructura física permanente o casa comunal en el sector, el ajedrez se consolida como la alternativa más económica y de alto impacto cognitivo. Solo se requiere de un tablero, la capacidad intelectual y la voluntad de la comunidad.
+            </p>
+        </div>
+    </div>
+</section>
+
+     <footer>
+        <p>Autores: Gabriel García (32.028.603), José Guanipa (32.153.215), Jesús Guerra (32.416.344), José Petit (32.569.485)</p>
+        <p>2026 - UNEFA - Punto Fijo</p>
+    </footer>
+
+    <div id="ai-chat-bubble" class="chat-bubble-animated" onclick="toggleChatWindow()">
+    <span class="chat-icon">:3</span>
+    <span class="chat-notification-dot"></span>
+</div>
+
+<div id="ai-chat-window" class="chat-window-hidden">
+    <div class="chat-header">
+        <div class="chat-header-info">
+            <span class="chat-status-online"></span>
+            <h3>Asistente IA - Proyecto Ajedrez</h3>
+        </div>
+        <button class="btn-close-chat" onclick="toggleChatWindow()">×</button>
+    </div>
+    
+    <div id="chat-messages-body" class="chat-messages">
+        <div class="message msg-bot">
+            ¡Hola! Soy el asistente virtual del proyecto de Probabilidad y Estadística. ¿Tienes dudas sobre la población, la muestra del Sector I o las conclusiones del Club de Ajedrez? ¡Pregúntame!
+        </div>
+    </div>
+    
+    <form id="chat-input-form" onsubmit="enviarMensajeIA(event)">
+        <input type="text" id="chat-user-input" placeholder="Escribe tu duda aquí..." required autocomplete="off">
+        <button type="submit" id="btn-send-chat">➤</button>
+    </form>
+</div>
+
+<section id="evidencias-campo">
+    <div class="evidence-header">
+        <h2>Evidencias de la Investigación de Campo</h2>
+        <p>Registro fotográfico y metodológico de las encuestas aplicadas y la interacción directa con los habitantes de la Comunidad Antonio José de Sucre – Sector I.</p>
+    </div>
+
+    <div class="evidence-grid">
+        
+        <div class="evidence-card" data-index="1">
+            <div class="evidence-img-wrapper">
+                <img src="images/evidence/evidence1.png" alt="Evidencia 1 - Abordaje Comunitario" class="evidence-img">
+            </div>
+            <div class="evidence-info">
+                <h4>Aplicación de Encuestas</h4>
+                <p>Recopilación de datos primarios en el Sector I para medir el índice de interacción recreativa.</p>
+            </div>
+        </div>
+
+        <div class="evidence-card" data-index="2">
+            <div class="evidence-img-wrapper">
+                <img src="images/evidence/evidence2.png" alt="Evidencia 2 - Muestreo Estadístico" class="evidence-img">
+            </div>
+            <div class="evidence-info">
+                <h4>Muestreo de Campo</h4>
+                <p>Fase de entrevistas para validar las variables cuantitativas de la investigación descriptiva.</p>
+            </div>
+        </div>
+
+        <div class="evidence-card" data-index="3">
+            <div class="evidence-img-wrapper">
+                <img src="images/evidence/evidence3.jpeg" alt="Evidencia 3 - Análisis de Ocio" class="evidence-img">
+            </div>
+            <div class="evidence-info">
+                <h4>Estudio de Frecuencias</h4>
+                <p>Evaluación de las rutinas de ocio de los habitantes para justificar el espacio formativo.</p>
+            </div>
+        </div>
+
+        <div class="evidence-card" data-index="4">
+            <div class="evidence-img-wrapper">
+                <img src="images/evidence/evidence4.jpeg" alt="Evidencia 4 - Viabilidad del Club" class="evidence-img">
+            </div>
+            <div class="evidence-info">
+                <h4>Validación de Viabilidad</h4>
+                <p>Verificación del respaldo masivo al ajedrez como recurso pedagógico y cognitivo de bajo costo.</p>
+            </div>
+        </div>
+
+        <div class="evidence-card" data-index="5">
+            <div class="evidence-img-wrapper">
+                <img src="images/evidence/evidence5.jpeg" alt="Evidencia 5 - Recopilación Final" class="evidence-img">
+            </div>
+            <div class="evidence-info">
+                <h4>Consolidación de Datos</h4>
+                <p>Cierre de la jornada de campo previa al procesamiento de la información no agrupada.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script src="script/foto_js.js"></script>
+<script src="script\ai_service.js"></script>
+<script src="script\community.js"></script>
+<script src="script\muestra.js"></script>
+<script src="script\muestra.js"></script>
+<script src="script\proyecto.js"></script>
+
 </body>
-</html
+</html>

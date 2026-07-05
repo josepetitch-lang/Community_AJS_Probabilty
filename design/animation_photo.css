@@ -1,0 +1,63 @@
+.evidence-animated-base {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+    transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), 
+                transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+    will-change: transform, opacity; 
+}
+
+
+.evidence-visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+
+.evidence-img-wrapper {
+    overflow: hidden;
+    border-radius: 6px;
+    background-color: #121214;
+}
+
+/* Transición suave para la foto por dentro */
+.evidence-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), 
+                filter 0.3s ease;
+    filter: brightness(0.9);
+}
+
+
+.evidence-card:hover .evidence-img {
+    transform: scale(1.06); /* Micro-zoom muy pro */
+    filter: brightness(1.1); 
+}
+
+
+@keyframes shineEffect {
+    100% {
+        left: 125%;
+    }
+}
+
+.evidence-img-wrapper {
+    position: relative;
+}
+
+.evidence-img-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.15) 100%);
+    transform: skewX(-25deg);
+    transition: 0.75s;
+}
+
+.evidence-card:hover .evidence-img-wrapper::after {
+    animation: shineEffect 0.75s forwards;
+}

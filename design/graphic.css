@@ -1,0 +1,119 @@
+:root {
+    --bg-primary: #121214;
+    --bg-surface: #1a1a1e;
+    --bg-card: #242429;
+    --text-main: #e2e8f0;
+    --text-muted: #94a3b8;
+    --accent: #ca8a04; /* Tono dorado/tablero de ajedrez */
+    --accent-hover: #a16207;
+    --border-color: #334155;
+    --success: #10b981;
+    --transition: all 0.3s ease;
+}
+
+.charts-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.chart-box {
+    background-color: #1a1a1e; 
+    border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.chart-box h3 {
+    font-size: 1.05rem;
+    margin-bottom: 1.2rem;
+    color: #ffffff;
+}
+
+.bar-container {
+    margin-bottom: 1rem;
+}
+
+.bar-label {
+    display: block;
+    font-size: 0.85rem;
+    color: #94a3b8;
+    margin-bottom: 0.3rem;
+}
+
+.bar-background {
+    background-color: #242429;
+    border-radius: 4px;
+    height: 16px;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.bar-fill {
+    height: 100%;
+    width: 0%; 
+    background-color: #3b82f6; 
+    border-radius: 4px;
+    transition: width 1.5s cubic-bezier(0.1, 1, 0.1, 1); 
+}
+
+
+.accent-bar {
+    background-color: #ca8a04; 
+}
+.muted-bar {
+    background-color: #475569;
+}
+
+.chart-desc {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    margin-top: 0.8rem;
+    font-style: italic;
+}
+
+
+.download-section {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+.download-card {
+    background: linear-gradient(135deg, #1a1a1e, #242429);
+    border: 1px solid #ca8a04;
+    border-radius: 12px;
+    padding: 2.5rem;
+    max-width: 550px;
+    text-align: center;
+    box-shadow: 0 10px 25px -5px rgba(0,0,0,0.4);
+}
+
+.download-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.btn-download {
+    display: inline-block;
+    background-color: var(--accent); 
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem; 
+    padding: 0.5rem 1.2rem; 
+    border-radius: 6px;
+    margin-top: 1.2rem;
+    max-width: 220px; 
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.btn-download:hover {
+    background-color: #a16207;
+    color: #ffffff;
+    transform: translateY(-2px);
+}

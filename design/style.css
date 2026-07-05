@@ -350,7 +350,7 @@ footer {
     display: none;
 }
 
-/* Responsivo */
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -359,5 +359,105 @@ footer {
     nav ul {
         flex-wrap: wrap;
         justify-content: center;
+    }
+}
+
+.charts-python-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.chart-python-card {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.chart-python-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+}
+
+.img-chart-fluid {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+
+.thanks-section {
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.thanks-container {
+    background: linear-gradient(145deg, #1a1a1e, #151518);
+    border: 1px solid var(--border-color);
+    border-top: 4px solid var(--accent); 
+    border-radius: 12px;
+    padding: 3rem;
+    max-width: 750px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.thanks-badge {
+    display: inline-block;
+    background-color: rgba(202, 138, 4, 0.1);
+    color: var(--accent);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+
+.thanks-container h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+.thanks-text {
+    color: var(--text-main);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.thanks-text em {
+    color: var(--accent);
+}
+
+.signature {
+    margin-top: 2.5rem;
+    border-top: 1px solid var(--border-color);
+    padding-top: 1.5rem;
+}
+
+.signature p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    font-style: italic;
+}
+
+
+@media (max-width: 768px) {
+    .thanks-container {
+        padding: 2rem 1.5rem;
+    }
+    .thanks-text {
+        text-align: left;
     }
 }

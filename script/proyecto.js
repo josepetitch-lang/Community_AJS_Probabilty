@@ -39,3 +39,40 @@ function cargarImpacto() {
     const target = document.getElementById('impacto-dinamico');
     target.innerHTML = `<div class="calc-box"><h3>Impacto en la Comunidad</h3><p>El proyecto reduce el sedentarismo mental y fomenta la integración social mediante el ajedrez.</p></div>`;
 }
+
+// extra
+
+document.addEventListener("DOMContentLoaded", () => {
+    const barras = document.querySelectorAll('.bar-fill');
+
+    
+    const observerOptions = {
+        root: null,
+        threshold: 0.2 
+    };
+
+    const animarGraficos = (entries, observer) => {
+        entries.forEach(entry => {
+            // Si el contenedor entró en pantalla
+            if (entry.isIntersecting) {
+                const elementoBarra = entry.target;
+                
+                const porcentajeObjetivo = elementoBarra.getAttribute('data-target');
+                
+               
+                elementoBarra.style.width = `${porcentajeObjetivo}%`;
+                
+                
+                observer.unobserve(elementoBarra);
+            }
+        });
+    };
+
+    const targetObserver = new IntersectionObserver(animarGraficos, observerOptions);
+
+  
+    barras.forEach(bar => {
+        targetObserver.observe(bar);
+    });
+});
+
